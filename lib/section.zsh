@@ -88,9 +88,9 @@ spaceship::section::render() {
   if [[ "$_spaceship_prompt_opened" == true ]] \
   && [[ "$SPACESHIP_PROMPT_PREFIXES_SHOW" == true ]] \
   && [[ -n "$prefix" ]]; then
-    result+="%{%B%}" # set bold
+    # result+="%{%B%}" # set bold
     result+="$prefix"
-    result+="%{%b%}" # unset bold
+    # result+="%{%b%}" # unset bold
   fi
 
   _spaceship_prompt_opened=true
@@ -102,9 +102,9 @@ spaceship::section::render() {
 
   if [[ "$SPACESHIP_PROMPT_SUFFIXES_SHOW" == true ]] \
   && [[ -n "$suffix" ]]; then
-    result+="%{%B%}" # reset bold, if it was diabled before
+    # result+="%{%B%}" # reset bold, if it was diabled before
     result+="$suffix"
-    result+="%{%b%}" # unset bold
+    # result+="%{%b%}" # unset bold
   fi
 
   echo -n "$result"
