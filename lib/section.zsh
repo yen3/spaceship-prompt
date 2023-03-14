@@ -96,9 +96,11 @@ spaceship::section::render() {
   _spaceship_prompt_opened=true
 
   # TODO: Decouple symbol and context when formatting will be introduced
-  result+="%{%B$color%}"    # set color
+  # result+="%{%B$color%}"    # set color
+  result+="%{$color%}"    # set color
   result+="$symbol$content" # section content
-  result+="%{%b%f%}"        # unset color
+  result+="%{%f%}"        # unset color
+  # result+="%{%b%f%}"        # unset color
 
   if [[ "$SPACESHIP_PROMPT_SUFFIXES_SHOW" == true ]] \
   && [[ -n "$suffix" ]]; then
