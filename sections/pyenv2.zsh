@@ -27,7 +27,7 @@ spaceship_pyenv2() {
   [[ -n "$is_pyenv_version" ]] || return
 
   if spaceship::exists pyenv; then
-    local pyenv_version=$(pyenv version | awk '{ print $1 }')
+    local pyenv_version=$(pyenv version | head -n1 | awk '{ print $1 }')
     spaceship::section \
       --color "$SPACESHIP_PYENV2_COLOR" \
       --prefix "$SPACESHIP_PYENV2_PREFIX" \
