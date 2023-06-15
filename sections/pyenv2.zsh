@@ -1,8 +1,6 @@
 #
 # pyenv
 #
-# An advanced, purely functional programming language.
-# Link: https://www.haskell.org/
 
 # ------------------------------------------------------------------------------
 # Configuration
