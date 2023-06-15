@@ -81,7 +81,7 @@ spaceship::is_section_async <section>
 
 Перевіряє, чи командний рядок працює в асинхронному режимі. Ця утиліта повертає нульовий код виходу, якщо командний рядок працює в асинхроннім режимі, і відмінним від нуля, якщо це не так.
 
-Перевіряє, чи `SPACESHIP_PROMPT_ASYNC` встановлено у `true` і [`zsh-async` завантажується](/api/environment/#asynchronous-runtime).
+Перевіряє, чи `SPACESHIP_PROMPT_ASYNC` встановлено у `true` і [`zsh-async` завантажується](/uk/api/environment/#asynchronous-runtime).
 
 ## `spaceship::deprecated`
 
@@ -195,5 +195,5 @@ spaceship::datafile --json package.json "author.name"
 * TOML — `tomlq` (постачається з [`python-yq`](https://kislyuk.github.io/yq/))
 * XML — `xq` (постачається з [`python-yq`](https://kislyuk.github.io/yq/))
 
-!!! tip
+!!! tip "Порада"
     Найбільш універсальним рішенням для читання файлів даних є використання [`python-yq`](https://kislyuk.github.io/yq/).
